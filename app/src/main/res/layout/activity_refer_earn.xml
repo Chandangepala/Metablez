@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ReferEarnActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/refer_img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/refer_msg"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ref_code"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_15sdp"
+        android:layout_gravity="center_horizontal"
+        android:text="MEATABLEZ202101"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/ic_baseline_copy_"
+        android:drawablePadding="@dimen/_10sdp"
+        android:background="@drawable/dashed_rectangle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/refer_info"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="@dimen/_4sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_15sdp"
+            android:layout_gravity="center_horizontal"
+            android:text="WhatsApp"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/whatsapp_img"
+            android:drawablePadding="@dimen/_10sdp"
+            android:background="@drawable/shape_round_corner_rectangle"/>
+
+        <TextView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:padding="@dimen/_15sdp"
+            android:layout_gravity="center_horizontal"
+            android:text="More"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_baseline_share_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:background="@drawable/shape_round_corner_rectangle"/>
+    </LinearLayout>
+</LinearLayout>

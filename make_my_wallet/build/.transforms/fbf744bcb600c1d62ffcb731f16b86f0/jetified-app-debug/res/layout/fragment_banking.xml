@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.allfragment.BankingFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lLayoutMPin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/ivLogo"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/app_logo" />
+
+                        <TextView
+                            android:id="@+id/tvMPinTittle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="Enter mPin"
+                            android:textColor="@color/colorYellow"
+                            android:textSize="@dimen/_20sdp" />
+
+                        <EditText
+                            android:id="@+id/edtMPin"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/edit_text_outline"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="left|center"
+                            android:hint="Enter Pin"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:textColor="@color/colorTextDark"
+                            android:textColorHint="@color/colorTextLight"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <Button
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/button_solid_blue"
+                            android:fontFamily="@font/roboto"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lLayoutBanking"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/lLayoutSendMoney"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/rLayoutSendMoney"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/ic_gray_circle"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivSendMoney"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_rupee" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rLayoutSendMoney">
+
+                                    <TextView
+                                        android:id="@+id/tvSendMoneyTittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="center"
+                                        android:text="Send Money"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="@dimen/_8sdp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lLayoutExpressDMR"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/rLayoutDMRExpress"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/ic_gray_circle"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivGas"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_wallet_blue" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rLayoutDMRExpress">
+
+                                    <TextView
+                                        android:id="@+id/tvDMRExpressTittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="center"
+                                        android:text="Express\nDMR"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="@dimen/_8sdp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lLayoutICICIAEPS"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/rLayoutICICIAeps"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/ic_gray_circle"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivICICIAeps"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_wallet_red" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rLayoutICICIAeps">
+
+                                    <TextView
+                                        android:id="@+id/tvICICIAepsTittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="center"
+                                        android:text="ICICI Aeps"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_60sdp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/lLayoutGiveTopup"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/rLayoutDTHRecharge"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/ic_gray_circle"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivDTH"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_get_money" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rLayoutDTHRecharge">
+
+                                    <TextView
+                                        android:id="@+id/tvDTHRechargeTittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="center"
+                                        android:text="Give Topup"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lLayoutCreditCard"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/rLayoutBBPS"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/ic_gray_circle"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivBBPS"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_credit_card" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rLayoutBBPS">
+
+                                    <TextView
+                                        android:id="@+id/tvBBPSTittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="center"
+                                        android:text="Credit card"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="@dimen/_8sdp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lLayoutMMM"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/rLayoutDataCard"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/ic_gray_circle"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivDataCard"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_wallet_purple" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rLayoutDataCard">
+
+                                    <TextView
+                                        android:id="@+id/tvDataCardTittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="center"
+                                        android:text="MMW\nPayout"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="@dimen/_8sdp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_60sdp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/lLayoutLoanRepayment"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/ic_gray_circle"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivLoanRepayment"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_loan" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rLayoutLoanRepayment">
+
+                                    <TextView
+                                        android:id="@+id/tvLoanRepaymentTittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="center"
+                                        android:text="Loan Repayment"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lLayoutMutualFund"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/rLayoutMutaulFund"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/ic_gray_circle"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivMutaulFund"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_mutual" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rLayoutMutaulFund">
+
+                                    <TextView
+                                        android:id="@+id/tvMutaulFundTittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="center"
+                                        android:text="Mutual fund"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="@dimen/_8sdp" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lLayoutICICIPos"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/ic_gray_circle"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivICICIPos"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/ic_wallet_yellow" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rLayoutICICIPos">
+
+                                    <TextView
+                                        android:id="@+id/tvICICIPosTittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:gravity="center"
+                                        android:text="ICICI Pos"
+                                        android:textColor="@color/colorTextDark"
+                                        android:textSize="@dimen/_8sdp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

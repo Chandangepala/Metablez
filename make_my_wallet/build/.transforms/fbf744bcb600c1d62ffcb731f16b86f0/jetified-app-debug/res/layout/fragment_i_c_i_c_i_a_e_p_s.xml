@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.allfragment.ICICIAEPSFragment">
+
+    <!--  multi tabs     -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/topTabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:id="@+id/rlAmountWithdraw"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAmountWithdraw"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_attach_money" />
+
+            <TextView
+                android:id="@+id/txtAmountWithdraw"
+                android:layout_below="@+id/ivAmountWithdraw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:text="Amount \nWithdraw"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlBalanceEnquiry"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBalanceEnquiry"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_account_balance" />
+
+            <TextView
+                android:id="@+id/txtBalanceEnquairy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivBalanceEnquiry"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:text="Balance \n Enquiry"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAdharPay"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAdharPay"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_wallet" />
+
+            <TextView
+                android:id="@+id/txtAdharPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivAdharPay"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:text="Aadhar \nPay"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMiniStatement"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMiniStatement"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_mini_statement" />
+
+            <TextView
+                android:id="@+id/txtMiniStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivMiniStatement"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:text="Mini \n Statement"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Container -->
+    <RelativeLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topTabs" />
+
+</RelativeLayout>

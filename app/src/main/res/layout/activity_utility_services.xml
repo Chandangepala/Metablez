@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.UtilityServicesActivity">
+
+    <include
+        android:id="@+id/toolbar_utility"
+        layout="@layout/custome_toolbar_utility"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_utility"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/recycler_view_utilityservices"/>
+</RelativeLayout>

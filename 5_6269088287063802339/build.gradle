@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('5_6269088287063802339.aar'))

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utility.RechargeActivity">
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fragment_container_utility"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/custome_toolbar_utility"
+        android:id="@+id/custom_toolbar_utility"/>
+
+
+    <TextView
+        android:id="@+id/next_btn_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:gravity="center"
+        android:fontFamily="@font/aver"
+        android:text="@string/next"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:elevation="@dimen/_5sdp"
+        android:drawableEnd="@drawable/ic_baseline_arrow_next"
+        android:drawablePadding="@dimen/_4sdp"
+        android:background="@drawable/button_backgroud"/>
+
+
+    <TextView
+        android:id="@+id/enter_mobile_tag_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edt_mobile_no"
+        android:layout_below="@id/custom_toolbar_utility"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:padding="@dimen/_5sdp"
+        android:fontFamily="@font/aver"
+        android:text="@string/enter_mobile_number"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edt_mobile_no"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_mobile_tag_txt"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="Mobile No."
+        android:maxLength="10"
+        android:inputType="number"
+        android:textColorHint="@android:color/darker_gray"
+        android:shadowColor="@color/blue"
+        android:drawableLeft="@drawable/country_code_flag"
+        android:drawablePadding="@dimen/_7sdp"
+        android:background="@drawable/shape_round_corner_rectangle"/>
+
+
+    <TextView
+        android:id="@+id/choose_operator_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edt_mobile_no"
+        android:layout_below="@id/edt_mobile_no"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:padding="@dimen/_5sdp"
+        android:fontFamily="@font/aver"
+        android:text="@string/choose_operator"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_backgroud"/>
+
+
+    <LinearLayout
+        android:id="@+id/networks_layout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/edt_mobile_no"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/airtel_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/airtel_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Airtel Prepaid"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bsnl_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/bsnl_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="BSNL Prepaid"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mtnl_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/mtnl_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="MTNL Icon"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/vi_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/vi_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Vi Prepaid"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jio_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/jio_icon"
+                    android:padding="@dimen/_4sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Jio Prepaid"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/extra_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/airtel_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Airtel Prepaid"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

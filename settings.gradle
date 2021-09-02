@@ -1,0 +1,6 @@
+include ':make_my_wallet_'
+include ':5_6269088287063802339'
+include ':make_my_wallet'
+include ':retailer_meatablez'
+include ':app'
+rootProject.name = "Metablez"

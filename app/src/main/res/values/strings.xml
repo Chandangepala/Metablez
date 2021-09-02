@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name" translatable="false">Meatablez</string>
+    <string name="sign_in_txt">LOGIN TO</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="sign_up_txt">New to Meatablez?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="req_sign_up_txt">SIGN UP WITH</string>
+    <string name="already_registered">Already On Meatablez?</string>
+    <string name="login">Login</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="select_date">Select your delivery date</string>
+    <string name="select_time_slot">Select a time slot</string>
+    <string name="time_and_slot">Standard Delivery: 11-May-2021, 5 PM -7 PM</string>
+    <string name="select_pay_method">Select a payment method</string>
+    <string name="pay_amount">Amount to pay</string>
+    <string name="refer_msg">Refer the app and spread the joy!</string>
+    <string name="ref_code">Your unique refer code is</string>
+    <string name="refer_info">Tell a friend they get Rs. 200 discount on min
+    order value of Rs. 500. You get Rs. 200 Meatablez cash. </string>
+
+    <string name="greeting">Good Morning</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_maps_tracking">Map</string>
+
+    <string name="shops">Meatablez\'s Shop</string>
+    <string name="products">Products</string>
+    <string name="cart">Cart</string>
+    <string name="offer">Offer</string>
+    <string name="home">Home</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="title_activity_add_address">AddAddressActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="flat_house_no">Flat / House no.</string>
+    <string name="landmark_eg_near_wtp_mall">Landmark eg. near WTP Mall</string>
+    <string name="add_address">Add Address</string>
+    <string name="delivery_options">Delivery Options</string>
+    <string name="update_address">Update Address</string>
+    <string name="fb_url">https://www.facebook.com/Meatablez-113405024336990</string>
+    <string name="insta_url">https://www.instagram.com/meatablez_/</string>
+    <string name="twitter_url">https://twitter.com/_Meatablez</string>
+    <string name="youtube_url">https://www.youtube.com/channel/UC_H27IXnRmfRd9wNBkprH9Q</string>
+</resources>

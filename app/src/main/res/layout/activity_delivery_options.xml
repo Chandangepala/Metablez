@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fadedWhite"
+    tools:context=".activities.DeliveryOptionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include android:id="@+id/toolbar_deli_option"
+            layout="@layout/custome_toolbar_home"/>
+
+        <ImageView
+            android:id="@+id/product_large_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/app_logo"
+            android:background="@color/white"/>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="1dp"
+                    android:text="Deliver to"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="Z 11, Shargul"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="Setor 9, Shyam Nagar, 500011"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="New Delhi"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/edit_txt_btn_deliv_opt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingLeft="@dimen/_7sdp"
+                android:text="Edit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/button_backgroud"/>
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_vw_address_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/liteGray"/>
+
+            <TextView
+                android:id="@+id/txt_add_new_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:text="@string/add_new_address"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:drawableEnd="@drawable/ic_baseline_arrow_next"
+                android:drawablePadding="@dimen/_15sdp"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txt_select_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/select_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:layout_below="@id/txt_select_date"
+                android:id="@+id/radio_group_date">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingLeft="@dimen/_7sdp"
+                    android:text="Today"
+                    android:background="@drawable/search_box_background"
+                    android:id="@+id/radio_btn_today"
+                    android:buttonTint="@color/red"/>
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:paddingLeft="@dimen/_7sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:text="Tomorrow"
+                    android:background="@drawable/search_box_background"
+                    android:id="@+id/radio_btn_tomorrow"
+                    android:buttonTint="@color/red"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txt_select_time_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/select_time_slot"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txt_timing_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:text="9 AM - 11 AM"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/search_box_background"/>
+
+                <TextView
+                    android:id="@+id/txt_timing_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:text="11 AM - 1 PM"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/search_box_background"/>
+
+                <TextView
+                    android:id="@+id/txt_timing_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_7sdp"
+                    android:text="1 PM - 3 PM"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/search_box_background"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txt_timing_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:text="3 PM - 5 PM"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/search_box_background"/>
+
+                <TextView
+                    android:id="@+id/txt_timing_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:text="5 PM - 7 PM"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/search_box_background"/>
+
+                <TextView
+                    android:id="@+id/txt_timing_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_7sdp"
+                    android:text="7 PM - 9 PM"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/search_box_background"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_continue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:text="Continue"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

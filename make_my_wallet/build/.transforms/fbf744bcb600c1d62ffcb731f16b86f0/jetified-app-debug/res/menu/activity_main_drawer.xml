@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_account_statement"
+            android:title="@string/menu_account_statement"/>
+        <item
+            android:id="@+id/nav_aesp_wallet"
+            android:title="@string/menu_aesp_wallet"/>
+        <item
+            android:id="@+id/nav_recharge_history"
+            android:title="@string/menu_recharge_report"/>
+
+        <item
+            android:id="@+id/nav_icici_aeps_report"
+            android:title="@string/menu_icici_aeps_report" />
+        <item
+            android:id="@+id/nav_dmr_report"
+            android:title="@string/menu_dmr_report" />
+        <item
+            android:id="@+id/nav_express_dmr_payout"
+            android:title="@string/menu_express_dmr_payout" />
+        <item
+            android:id="@+id/nav_aeps_kyc"
+            android:title="@string/menu_aeps_kyc" />
+        <item
+            android:id="@+id/nav_change_mpin"
+            android:title="@string/menu_change_mpin" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:title="@string/menu_change_password" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:title="@string/menu_contact_us" />
+
+        <item
+            android:id="@+id/nav_rate_us"
+            android:title="@string/menu_rate_us" />
+        <item
+            android:id="@+id/nav_help"
+            android:title="@string/menu_help" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

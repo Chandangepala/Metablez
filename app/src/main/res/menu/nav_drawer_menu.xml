@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/ic_baseline_person_"
+            android:title="My Account" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_baseline_phone_"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_refer"
+            android:icon="@drawable/ic_baseline_refer"
+            android:title="Refer a Friend" />
+
+        <item
+            android:id="@+id/nav_zone"
+            android:icon="@drawable/app_logo"
+            android:title="Meatablez Zone" />
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_home_"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_baseline_home_"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

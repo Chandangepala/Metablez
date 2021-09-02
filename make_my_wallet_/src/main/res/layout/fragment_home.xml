@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrayBg"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHeader"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:background="@color/colorWhite">
+
+                <LinearLayout
+                    android:id="@+id/lLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rLayoutMainWallet"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/ic_gray_circle"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/ivMainWallet"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_wallet_red" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rLayoutMainWallet">
+
+                            <TextView
+                                android:id="@+id/tvMainWalletTittle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="@string/main_wallet"
+                                android:textColor="@color/colorTextDark"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <TextView
+                                android:id="@+id/tvMainWalletValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvMainWalletTittle"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text=""
+                                android:textColor="@color/colorTextDark"
+                                android:textSize="@dimen/_10sdp"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rLayoutAESWallet"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/ic_gray_circle"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/ivAESWallet"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_wallet_yellow" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rLayoutAESWallet">
+
+                            <TextView
+                                android:id="@+id/tvAESWalletTittle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="@string/aeps_balance"
+                                android:textColor="@color/colorTextDark"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <TextView
+                                android:id="@+id/tvAESWalletValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvAESWalletTittle"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text=""
+                                android:textColor="@color/colorTextDark"
+                                android:textSize="@dimen/_10sdp" />
+<!--₹-->
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rLayoutInsentiveWallet"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/ic_gray_circle"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/ivInsentiveWallet"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_wallet_gray" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rLayoutInsentiveWallet">
+
+                            <TextView
+                                android:id="@+id/tvInsentiveWalletTittle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="@string/insentive_balance"
+                                android:textColor="@color/colorTextDark"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <TextView
+                                android:id="@+id/tvInsentiveWalletValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvInsentiveWalletTittle"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="₹"
+                                android:textColor="@color/colorTextDark"
+                                android:textSize="@dimen/_10sdp" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBanner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_below="@+id/cvHeader"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorWhite">
+
+                <RelativeLayout
+                    android:id="@+id/rLayoutBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvNoRecordBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/cvBottom"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/_15sdp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/tabs"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/colorWhite"
+                        app:tabGravity="fill"
+                        app:tabMode="fixed"></com.google.android.material.tabs.TabLayout>
+
+                    <FrameLayout
+                        android:id="@+id/mainFram"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/tabs"
+                        android:visibility="gone" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:id="@+id/tvMarque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="right|center"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="Welcome to make my wallet Welcome to make my wallet Welcome to make my wallet Welcome to make my wallet Welcome to make my wallet Welcome to make my wallet"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/_12sdp" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- <RelativeLayout
+         android:visibility="gone"
+         android:layout_below="@+id/rLayoutBanner"
+         android:layout_marginTop="@dimen/_10sdp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+         <RelativeLayout
+             android:id="@+id/rLayoutFirst"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="visible">
+
+             <LinearLayout
+                 android:id="@+id/lLayoutFirstTop"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:weightSum="4">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:layout_weight="1">
+
+                     <RelativeLayout
+                         android:id="@+id/rLayoutPhone"
+                         android:layout_width="@dimen/_40sdp"
+                         android:layout_height="@dimen/_40sdp"
+                         android:background="@drawable/ic_gray_circle"
+                         android:gravity="center">
+
+                         <ImageView
+                             android:id="@+id/ivPhone"
+                             android:layout_centerInParent="true"
+                             android:layout_width="@dimen/_25sdp"
+                             android:layout_height="@dimen/_25sdp"
+                             android:src="@drawable/ic_phone" />
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/rLayoutPhone">
+
+                         <TextView
+                             android:id="@+id/tvPosition"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/roboto"
+                             android:gravity="center"
+                             android:text="DMR Service"
+                             android:textColor="@color/colorPrimaryDark"
+                             android:textSize="@dimen/_8sdp" />
+
+                     </RelativeLayout>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:layout_weight="1">
+
+                     <RelativeLayout
+                         android:id="@+id/rLayoutPhone2"
+                         android:layout_width="@dimen/_40sdp"
+                         android:layout_height="@dimen/_40sdp"
+                         android:background="@drawable/ic_gray_circle"
+                         android:gravity="center">
+
+                         <ImageView
+                             android:id="@+id/ivPhone2"
+                             android:layout_centerInParent="true"
+                             android:layout_width="@dimen/_25sdp"
+                             android:layout_height="@dimen/_25sdp"
+                             android:src="@drawable/ic_phone" />
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/rLayoutPhone2">
+
+                         <TextView
+                             android:id="@+id/tvPosition2"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/roboto"
+                             android:gravity="center"
+                             android:text="MMW"
+                             android:textColor="@color/colorPrimaryDark"
+                             android:textSize="@dimen/_8sdp" />
+
+                     </RelativeLayout>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:layout_weight="1">
+
+                     <RelativeLayout
+                         android:id="@+id/rLayoutPhone3"
+                         android:layout_width="@dimen/_40sdp"
+                         android:layout_height="@dimen/_40sdp"
+                         android:background="@drawable/ic_gray_circle"
+                         android:gravity="center">
+
+                         <ImageView
+                             android:id="@+id/ivPhone3"
+                             android:layout_centerInParent="true"
+                             android:layout_width="@dimen/_25sdp"
+                             android:layout_height="@dimen/_25sdp"
+                             android:src="@drawable/ic_phone" />
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/rLayoutPhone3">
+
+                         <TextView
+                             android:id="@+id/tvPosition3"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/roboto"
+                             android:gravity="center"
+                             android:text="MMW Express"
+                             android:textColor="@color/colorPrimaryDark"
+                             android:textSize="@dimen/_8sdp" />
+
+                     </RelativeLayout>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:layout_weight="1">
+
+                     <RelativeLayout
+                         android:id="@+id/rLayoutPhone4"
+                         android:layout_width="@dimen/_40sdp"
+                         android:layout_height="@dimen/_40sdp"
+                         android:background="@drawable/ic_gray_circle"
+                         android:gravity="center">
+
+                         <ImageView
+                             android:id="@+id/ivPhone4"
+                             android:layout_centerInParent="true"
+                             android:layout_width="@dimen/_25sdp"
+                             android:layout_height="@dimen/_25sdp"
+                             android:src="@drawable/ic_phone" />
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/rLayoutPhone4">
+
+                         <TextView
+                             android:id="@+id/tvPosition4"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/roboto"
+                             android:gravity="center"
+                             android:text="MMW Micro ATM"
+                             android:textColor="@color/colorPrimaryDark"
+                             android:textSize="@dimen/_8sdp" />
+                     </RelativeLayout>
+                 </LinearLayout>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_below="@+id/lLayoutFirstTop"
+                 android:layout_marginTop="@dimen/_5sdp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:weightSum="4">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:layout_weight="1">
+
+                     <RelativeLayout
+                         android:id="@+id/rLayoutPhone21"
+                         android:layout_width="@dimen/_40sdp"
+                         android:layout_height="@dimen/_40sdp"
+                         android:background="@drawable/ic_gray_circle"
+                         android:gravity="center">
+
+                         <ImageView
+                             android:id="@+id/ivPhone21"
+                             android:layout_centerInParent="true"
+                             android:layout_width="@dimen/_25sdp"
+                             android:layout_height="@dimen/_25sdp"
+                             android:src="@drawable/ic_phone" />
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/rLayoutPhone21">
+
+                         <TextView
+                             android:id="@+id/tvPosition21"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/roboto"
+                             android:gravity="center"
+                             android:text="DMR Service"
+                             android:textColor="@color/colorPrimaryDark"
+                             android:textSize="@dimen/_8sdp" />
+                     </RelativeLayout>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:layout_weight="1">
+
+                     <RelativeLayout
+                         android:id="@+id/rLayoutPhone22"
+                         android:layout_width="@dimen/_40sdp"
+                         android:layout_height="@dimen/_40sdp"
+                         android:background="@drawable/ic_gray_circle"
+                         android:gravity="center">
+
+                         <ImageView
+                             android:id="@+id/ivPhone22"
+                             android:layout_centerInParent="true"
+                             android:layout_width="@dimen/_25sdp"
+                             android:layout_height="@dimen/_25sdp"
+                             android:src="@drawable/ic_phone" />
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/rLayoutPhone22">
+
+                         <TextView
+                             android:id="@+id/tvPosition22"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/roboto"
+                             android:gravity="center"
+                             android:text="Mini Statement"
+                             android:textColor="@color/colorPrimaryDark"
+                             android:textSize="@dimen/_8sdp" />
+
+                     </RelativeLayout>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:visibility="invisible"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:layout_weight="1">
+
+                     <RelativeLayout
+                         android:id="@+id/rLayoutPhone32"
+                         android:layout_width="@dimen/_40sdp"
+                         android:layout_height="@dimen/_40sdp"
+                         android:background="@drawable/ic_gray_circle"
+                         android:gravity="center">
+
+                         <ImageView
+                             android:id="@+id/ivPhone32"
+                             android:layout_centerInParent="true"
+                             android:layout_width="@dimen/_25sdp"
+                             android:layout_height="@dimen/_25sdp"
+                             android:src="@drawable/ic_phone" />
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/rLayoutPhone32">
+
+                         <TextView
+                             android:id="@+id/tvPosition32"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/roboto"
+                             android:gravity="center"
+                             android:text="MMW Express"
+                             android:textColor="@color/colorPrimaryDark"
+                             android:textSize="@dimen/_8sdp" />
+
+                     </RelativeLayout>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:layout_weight="1">
+
+                     <RelativeLayout
+                         android:id="@+id/rLayoutPhone42"
+                         android:layout_width="@dimen/_40sdp"
+                         android:layout_height="@dimen/_40sdp"
+                         android:background="@drawable/ic_gray_circle"
+                         android:gravity="center">
+
+                         <ImageView
+                             android:id="@+id/ivPhone42"
+                             android:layout_centerInParent="true"
+                             android:layout_width="@dimen/_25sdp"
+                             android:layout_height="@dimen/_25sdp"
+                             android:src="@drawable/ic_phone"/>
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@+id/rLayoutPhone42">
+
+                         <TextView
+                             android:id="@+id/tvPosition42"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/roboto"
+                             android:gravity="center"
+                             android:text="MMW Micro ATM"
+                             android:textColor="@color/colorPrimaryDark"
+                             android:textSize="@dimen/_8sdp" />
+                     </RelativeLayout>
+                 </LinearLayout>
+             </LinearLayout>
+         </RelativeLayout>
+
+
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:visibility="gone"
+             android:id="@+id/recyclerView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+
+         <TextView
+             android:id="@+id/tvNoRecord"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="@dimen/_10sdp"
+             android:fontFamily="@font/roboto_light"
+             android:gravity="center"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="@dimen/_12sdp"
+             android:visibility="gone" />
+
+     </RelativeLayout>-->
+
+</RelativeLayout>

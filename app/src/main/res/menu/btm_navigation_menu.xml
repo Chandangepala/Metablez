@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home"
+        android:icon="@drawable/ic_baseline_home_"
+        />
+    <item
+        android:id="@+id/walletFrag"
+        android:title="@string/offer"
+        android:icon="@drawable/ic_baseline_offer"/>
+
+    <item android:id="@+id/cartFrag"
+        android:title="@string/cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_"/>
+</menu>

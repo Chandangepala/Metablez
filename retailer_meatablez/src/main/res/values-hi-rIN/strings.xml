@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meatablez Retailer</string>
+    <string name="register_phone_txt" translatable="false">अपना फोन नंबर रजिस्टर करें, शुरू करने के लिए।</string>
+    <string name="phone_no">मोबाइल नंबर</string>
+    <string name="register">रजिस्टर करें</string>
+    <string name="verify">सत्यापित करें</string>
+    <string name="setup_shop">अपनी दुकान स्थापित करें</string>
+    <string name="shop_name">दुकान का नाम</string>
+    <string name="shop_address">दुकान का पता</string>
+    <string name="shop_category">दुकान का प्रकार</string>
+    <string name="set_up">दुकान स्थापित करें</string>
+</resources>

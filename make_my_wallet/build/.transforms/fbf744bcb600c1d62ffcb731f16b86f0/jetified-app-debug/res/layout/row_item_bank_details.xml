@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/colorLightGrayBg"/>
+
+        <TextView
+            android:id="@+id/txtBankName"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/_10sdp" />
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/colorLightGrayBg"/>
+
+        <TextView
+            android:id="@+id/tvHolderName"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/_10sdp" />
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/colorLightGrayBg"/>
+
+        <TextView
+            android:id="@+id/txtBankAccount"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/_10sdp" />
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/colorLightGrayBg"/>
+
+        <TextView
+            android:id="@+id/txtIFSCCode"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/_10sdp" />
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/colorLightGrayBg"/>
+
+        <TextView
+            android:id="@+id/txtBranch"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/colorLightGrayBg"/>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:id="@+id/rLayoutBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtBank"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Bank name"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txtBankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtBank"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rLayoutBank">
+
+            <TextView
+                android:id="@+id/txtHolderName"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Holder Name"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvHolderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtHolderName"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayBankAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rLayoutName">
+
+            <TextView
+                android:id="@+id/txtAccount"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Bank Account "
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txtBankAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtAccount"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayoutIFSC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rLayBankAccount">
+
+            <TextView
+                android:id="@+id/txtIFSC"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/roboto"
+                android:text="IFSC Code "
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txtIFSCCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtIFSC"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rLayoutBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rLayoutIFSC">
+
+            <TextView
+                android:id="@+id/txtBranchName"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/roboto"
+                android:text="Branch name"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txtBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtBranchName"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.allfragment.MMMFragment" android:tag="layout/fragment_m_m_m_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lLayoutAddForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvErrorMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/edit_text_outline"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="left|center"
+                        android:hint="@string/amount"
+                        android:inputType="number"
+                        android:maxLength="50"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/colorTextDark"
+                        android:textColorHint="@color/colorTextLight"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rLayoutChooseBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edit_text_outline"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtChooseBank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toLeftOf="@+id/ivDownArrow"
+                            android:background="@null"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="left|center"
+                            android:hint="Choose Company Bank"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:textColor="@color/colorTextDark"
+                            android:textColorHint="@color/colorTextLight"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivDownArrow"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:src="@drawable/ic_arrow_down" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rLayoutChoosePayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edit_text_outline"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtChoosePayment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toLeftOf="@+id/ivDownArrowPayment"
+                            android:background="@null"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="left|center"
+                            android:hint="Choose Payment Method"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:textColor="@color/colorTextDark"
+                            android:textColorHint="@color/colorTextLight"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:id="@+id/ivDownArrowPayment"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:src="@drawable/ic_arrow_down" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlPaymentDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edit_text_outline"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:singleLine="true"
+                            android:text="Payment Date"
+                            android:textColor="@color/colorTextLight"
+                            android:textColorHint="@color/colorTextLight"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edtBankRefId"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edit_text_outline"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="left|center"
+                        android:hint="@string/bank_ref_id"
+                        android:inputType="text"
+                        android:maxLength="60"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/colorTextDark"
+                        android:textColorHint="@color/colorTextLight"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/button_solid_blue"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@color/colorPrimaryDark"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/_1sdp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorLightGrayBg" />
+
+                            <TextView
+                                android:id="@+id/txtBankName"
+                                android:layout_width="@dimen/_170sdp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="Bank Name"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <View
+                                android:layout_width="@dimen/_1sdp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorLightGrayBg" />
+
+                            <TextView
+                                android:id="@+id/tvHolderName"
+                                android:layout_width="@dimen/_170sdp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="Holder Name"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <View
+                                android:layout_width="@dimen/_1sdp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorLightGrayBg" />
+
+                            <TextView
+                                android:id="@+id/txtBankAccount"
+                                android:layout_width="@dimen/_170sdp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="Bank Account"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <View
+                                android:layout_width="@dimen/_1sdp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorLightGrayBg" />
+
+                            <TextView
+                                android:id="@+id/txtIFSCCode"
+                                android:layout_width="@dimen/_170sdp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="IFSC"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <View
+                                android:layout_width="@dimen/_1sdp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorLightGrayBg" />
+
+                            <TextView
+                                android:id="@+id/txtBranch"
+                                android:layout_width="@dimen/_170sdp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="Bank Branch"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycViewBankDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/tvNoRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+         

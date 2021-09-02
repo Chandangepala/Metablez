@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SetupShopActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shop_img"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shape_background_lang">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/setup_shop"
+            android:textSize="@dimen/_22sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:background="@drawable/edt_box_background"
+            android:hint="@string/shop_name"/>
+
+        <EditText
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:minLines="2"
+            android:background="@drawable/edt_box_background"
+            android:hint="@string/shop_address"/>
+
+        <Spinner
+            android:id="@+id/shop_category_spinner"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/edt_box_background"
+             />
+
+        <Button
+            android:id="@+id/start_shop_btn"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:textColor="@color/red"
+            android:text="@string/set_up"
+            android:textSize="@dimen/_14sdp"
+            android:background="@drawable/lang_box"/>
+
+
+        <com.mukesh.OtpView
+            android:visibility="gone"
+            android:id="@+id/edt_otp_register"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:hint="Enter OTP"
+            android:inputType="number"
+            app:OtpItemCount="4"
+            app:OtpLineColor="@color/red"
+            app:OtpViewType="line"
+            android:textColorHint="@android:color/darker_gray"
+            android:shadowColor="@color/blue"
+            android:background="@drawable/edt_box_background"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_verify_otp"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="@string/verify"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_14sdp"
+            android:background="@drawable/lang_box"/>
+
+    </LinearLayout>
+</RelativeLayout>

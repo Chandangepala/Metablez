@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
+        </item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
+        </item>
+    </string-array>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/roboto</item>
+        <item>@font/roboto_bold</item>
+        <item>@font/roboto_light</item>
+        <item>@font/roboto_medium</item>
+    </array>
+    <color name="colorAccent">#406695</color>
+    <color name="colorBg">#dedede</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlue">#04a8e5</color>
+    <color name="colorBorder">#8b9dc3</color>
+    <color name="colorDarkBlue">#5d75a1</color>
+    <color name="colorGreen">#FC2CC532</color>
+    <color name="colorLightBlue">#54c2f3</color>
+    <color name="colorLightGray">#ECF2FB</color>
+    <color name="colorLightGrayBg">#51D7D7D7</color>
+    <color name="colorLightGrayText">#898989</color>
+    <color name="colorLightWhite">#fefefe</color>
+    <color name="colorOrange">#fd790c</color>
+    <color name="colorPrimary">#033c67</color>
+    <color name="colorPrimaryDark">#00173c</color>
+    <color name="colorPurple">#5659ff</color>
+    <color name="colorRed">#f44236</color>
+    <color name="colorSkyBlue">#47b6fa</color>
+    <color name="colorTextDark">#000a12</color>
+    <color name="colorTextLight">#808080</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorYellow">#ffb400</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <string name="account_number">Account Number</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_baneficiary">Add Baneficiary</string>
+    <string name="aeps_balance">AePS Balance</string>
+    <string name="amount">Amount</string>
+    <string name="app_name">MakeMyWallet</string>
+    <string name="attention_error_title">Attention!</string>
+    <string name="banefeciary_name">Banefeciary Name</string>
+    <string name="bank_ref_id">Bank Ref ID</string>
+    <string name="bbps_pay">BBPS Pay</string>
+    <string name="clear">Clear</string>
+    <string name="connection_lost">Slow internet connection!</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="customer_mobile_number">Customer Mobile Number</string>
+    <string name="date_time">Date &amp; Time</string>
+    <string name="dmr_panel">DMR Panel</string>
+    <string name="dth_recharge">DTH Recharge</string>
+    <string name="electricity">Electricity</string>
+    <string name="enter_account_number">Enter account number</string>
+    <string name="enter_address_1">Enter Address 1</string>
+    <string name="enter_address_2">Enter Address 2</string>
+    <string name="enter_amount">Please Enter Amount</string>
+    <string name="enter_baneficiary_name">Enter Baneficiary name</string>
+    <string name="enter_bankRefId">Please enter Bank Ref Id </string>
+    <string name="enter_confirm_mpin">Enter Confirm Transaction Pin</string>
+    <string name="enter_confirm_password">Enter confirm password</string>
+    <string name="enter_confirm_password_2">Password and confirm password must be same</string>
+    <string name="enter_confirm_pin_same">Pin and Confirm pin must be same</string>
+    <string name="enter_current_mpin">Enter Current Transaction Pin</string>
+    <string name="enter_current_password">Enter Current password</string>
+    <string name="enter_dth_number">Enter DTH number</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_gas_number">Enter CA number</string>
+    <string name="enter_ifsc_code">Enter IFSC Code</string>
+    <string name="enter_landline_number">Enter landline number</string>
+    <string name="enter_mobile">Please enter mobile no.</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_new_mpin">Enter New Transaction Pin</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_payment_method">Choose payment method</string>
+    <string name="enter_pincode">Enter Pincode</string>
+    <string name="enter_recharge_amount">Enter recharge amount</string>
+    <string name="enter_state">Enter State</string>
+    <string name="enter_surname">Enter surname</string>
+    <string name="express_dmr">Express DMR</string>
+    <string name="forget_password">Forget password</string>
+    <string name="gas_recharge">Gas Recharge</string>
+    <string name="get_all_beneficiary">Get All Beneficiary</string>
+    <string name="give_top_up">Give Topup</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="icici_aeps">ICICI AEPS</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="insentive_balance">Insentive Balance</string>
+    <string name="invalid_login">Please check your mobile No.&amp; password</string>
+    <string name="landline_recharge">Landline Recharge</string>
+    <string name="loan_repayment">Loan Repayment</string>
+    <string name="login">Login</string>
+    <string name="logout_success">Logout successfully...</string>
+    <string name="main_wallet">MAiN Balance</string>
+    <string name="make_my_wallet">Make my wallet</string>
+    <string name="member_details">Member Details</string>
+    <string name="menu_account_statement">MAin Balance Report</string>
+    <string name="menu_aeps_kyc">AEPS KYC</string>
+    <string name="menu_aesp_wallet">AEPS Balance Report</string>
+    <string name="menu_change_mpin">Change mPin</string>
+    <string name="menu_change_password">Change Password</string>
+    <string name="menu_contact_us">Contact Us</string>
+    <string name="menu_data_card">Data card</string>
+    <string name="menu_dmr_report">DMR Report</string>
+    <string name="menu_express_dmr_payout">Express DMR/Payout</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_icici_aeps_report">ICICI AEPS Report</string>
+    <string name="menu_kyc">KYC</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_main_wallet">Main Balance</string>
+    <string name="menu_onboard_kyc_icici">Onboard KYC ICICI </string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_rate_us">Rate Us</string>
+    <string name="menu_recharge_history">Recharge History</string>
+    <string name="menu_recharge_report">Recharge Report</string>
+    <string name="menu_ybl_aeps_report">YBL Aeps Report</string>
+    <string name="mutual_fund">Mutual Fund</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="new_sender_registration">New Sender Registration</string>
+    <string name="noDataFound">No Data Found</string>
+    <string name="oops_connect_your_internet">Oops! Connect Your Internet</string>
+    <string name="please_choose_bank">Please choose bank</string>
+    <string name="please_enter_correct_mpin">Please enter correct mPin</string>
+    <string name="please_enter_mpin">Please enter mPin</string>
+    <string name="please_enter_transfer_amount">Please enter transfer amount</string>
+    <string name="please_select_circle">Please select circle</string>
+    <string name="please_select_operator">Please select operator</string>
+    <string name="please_select_transfer_method">Please select transfer method</string>
+    <string name="please_try_again">Please Try Again</string>
+    <string name="postpaid_recharge">Postpaid Recharge</string>
+    <string name="prepaid_recharge">Prepaid Recharge</string>
+    <string name="proceed">Proceed</string>
+    <string name="register">Register</string>
+    <string name="remark">Enter Remark</string>
+    <string name="rupee">"₹"</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="search">Search</string>
+    <string name="select_from_date">Please Select From Date</string>
+    <string name="select_payment_date">Please select payment date</string>
+    <string name="select_region">Please Select Region</string>
+    <string name="select_to_date">Please Select To Date</string>
+    <string name="send">Send</string>
+    <string name="sender_mobile_number">Enter Sender Mobile Number</string>
+    <string name="server_down">Unable to reach server</string>
+    <string name="something_went_wrong">Oops ! Something Went Wrong</string>
+    <string name="submit">Submit</string>
+    <string name="successful_title">Successful</string>
+    <string name="timed_out">Oops.Timeout Error!</string>
+    <string name="water">Water</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

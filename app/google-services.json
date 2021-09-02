@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "165966341718",
+    "project_id": "meatablez-25dfa",
+    "storage_bucket": "meatablez-25dfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165966341718:android:1855e72aa0b66603273df7",
+        "android_client_info": {
+          "package_name": "com.basic.metablez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165966341718-m2gb4lv08op83mvrkj1s6c362b0mfkdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.basic.metablez",
+            "certificate_hash": "be6af10c8dd3d3ce00be4f09a17f855b8d136a12"
+          }
+        },
+        {
+          "client_id": "165966341718-t1mus9lhnv7648f7mgql77ofaknvvi0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiWB-xldXwhoBq0FQVp8ckpnGaIrHHp8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165966341718-t1mus9lhnv7648f7mgql77ofaknvvi0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    card_view:contentPadding="@dimen/_10sdp"
+    card_view:cardCornerRadius="@dimen/_10sdp"
+    android:orientation="vertical">
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtProviderNameTittle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:text="Operator Name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtProviderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtProviderNameTittle"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtNumberTittle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:text="Mobile No."
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtNumberTittle"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtAmountTittle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:text="Amount"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtAmountTittle"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtTxnidTittle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:text="Txn Id"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtTxnid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtTxnidTittle"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtRechargeIdTitle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:text="Recharge Id"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtRechargeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtRechargeIdTitle"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtRemarkTittle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:text="Profit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtRemarkTittle"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtTotalBalanceTittle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:text="Total Balance"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtTotalBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtTotalBalanceTittle"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtDateTittle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="left|center"
+                    android:text="@string/date_time"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtDateTittle"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="left|center"
+                    android:textAllCaps="false"
+                    android:layout_toLeftOf="@+id/txtStatus"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textAllCaps="false"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txtStatusTittle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="left|center"
+                    android:text="Status"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtStatus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textAllCaps="false"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

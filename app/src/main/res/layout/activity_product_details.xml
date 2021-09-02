@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProductDetailsActivity">
+
+    <ImageView
+        android:id="@+id/product_large_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/slide_img_b"/>
+
+    <TextView
+        android:id="@+id/product_name_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_large_img"
+        android:padding="@dimen/_5sdp"
+        android:text="Chicken Breast Bonless"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/rellay_product_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name_title_txt">
+
+            <ImageView
+                android:id="@+id/product_img"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/farm_chicken_img"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:gravity="end"
+                android:paddingRight="@dimen/_15sdp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/product_price_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="RS 250/500g"/>
+
+                <TextView
+                    android:id="@+id/product_wt_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gross Wt. 500g | Net Wt. 500g"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/liteGray"/>
+
+                <LinearLayout
+                    android:id="@+id/linlay_add_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/button_backgroud"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp">
+                    <TextView
+                        android:id="@+id/minus_sign_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_2sdp"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"/>
+
+                    <TextView
+                        android:id="@+id/add_button_center_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="0.5kg"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"/>
+
+
+                    <TextView
+                        android:id="@+id/plus_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_2sdp"
+                        android:text="+"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/you_may_like_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rellay_product_card"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="You may also like"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_baseline_also_like"
+        android:drawablePadding="@dimen/_5sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/you_may_like_txt"
+        android:id="@+id/recycler_view_may_also_like"/>
+
+        <RelativeLayout
+            android:id="@+id/rellay_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_5sdp"
+            android:background="@color/red">
+
+       <TextView
+           android:id="@+id/no_of_item_txt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/_15sdp"
+           android:padding="@dimen/_3sdp"
+           android:textSize="@dimen/_12sdp"
+           android:text="1 item(s) | RS 250"
+           android:textColor="@color/white"
+           />
+
+            <TextView
+                android:id="@+id/view_cart_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:padding="@dimen/_3sdp"
+                android:textSize="@dimen/_12sdp"
+                android:text="View Cart"
+                android:drawableTint="@color/white"
+                android:drawableStart="@drawable/ic_baseline_shopping_cart_"
+                android:drawablePadding="@dimen/_3sdp"
+                android:textColor="@color/white"
+                />
+
+
+        </RelativeLayout>
+</RelativeLayout>

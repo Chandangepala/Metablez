@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activities.AddAddressActivity">
+
+    <include layout="@layout/custome_toolbar_home"/>
+
+    <EditText
+        android:id="@+id/edt_full_name"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:hint="@string/full_name"
+        android:textColorHint="@android:color/darker_gray"
+        android:shadowColor="@color/blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:background="@drawable/shape_round_corner_rectangle"/>
+
+    <EditText
+        android:id="@+id/edt_mobile_no"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:hint="@string/mobile_no"
+        android:inputType="number"
+        android:textColorHint="@android:color/darker_gray"
+        android:shadowColor="@color/blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:background="@drawable/shape_round_corner_rectangle"/>
+
+    <EditText
+        android:id="@+id/edt_house_no"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:hint="@string/flat_house_no"
+        android:textColorHint="@android:color/darker_gray"
+        android:shadowColor="@color/blue"
+        android:outlineSpotShadowColor="@color/blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:background="@drawable/shape_round_corner_rectangle"/>
+
+    <EditText
+        android:id="@+id/edt_street"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:hint="Area / Street"
+        android:textColorHint="@android:color/darker_gray"
+        android:shadowColor="@color/blue"
+        android:outlineSpotShadowColor="@color/blue"
+
+        android:drawablePadding="@dimen/_5sdp"
+        android:background="@drawable/shape_round_corner_rectangle"/>
+
+    <EditText
+        android:id="@+id/edt_landmark"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:hint="@string/landmark_eg_near_wtp_mall"
+        android:textColorHint="@android:color/darker_gray"
+        android:shadowColor="@color/blue"
+        android:outlineSpotShadowColor="@color/blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:background="@drawable/shape_round_corner_rectangle"/>
+
+    <EditText
+        android:id="@+id/edt_city"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:hint="Town / City"
+        android:textColorHint="@android:color/darker_gray"
+        android:shadowColor="@color/blue"
+        android:outlineSpotShadowColor="@color/blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:background="@drawable/shape_round_corner_rectangle"/>
+
+    <Button
+        android:id="@+id/btn_update_address"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/update_address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:backgroundTint="@color/red"
+        android:background="@drawable/button_shape"/>
+
+</LinearLayout>

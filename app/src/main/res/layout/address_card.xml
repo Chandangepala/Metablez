@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/radio_address_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chandan"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/_7sdp"
+        android:paddingTop="@dimen/_1sdp"
+        android:buttonTint="@color/red"
+        android:paddingBottom="@dimen/_1sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_house_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="Z 11, Shargul"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="Setor 9, Shyam Nagar, 500011"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="New Delhi"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_mobile_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="Mobile No: 7509123499"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/fadedWhite"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txt_edit_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:gravity="center"
+            android:padding="@dimen/_7sdp"
+            android:text="Edit"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_delete_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:padding="@dimen/_7sdp"
+            android:text="Delete"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/liteGray"/>
+</LinearLayout>

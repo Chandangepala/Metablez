@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.makemywallet.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+
+        <action
+            android:id="@+id/action_nav_home_to_DTHRechargeFragment"
+            app:destination="@id/DTHRechargeFragment" />
+
+        <action
+            android:id="@+id/action_nav_home_to_gasFragment"
+            app:destination="@id/gasFragment" />
+
+        <action
+            android:id="@+id/action_nav_home_to_landlineFragment"
+            app:destination="@id/landlineFragment" />
+
+        <action
+            android:id="@+id/action_nav_home_to_BBPSFragment"
+            app:destination="@id/BBPSFragment" />
+
+        <action
+            android:id="@+id/action_nav_home_to_DMRPanelFragment"
+            app:destination="@id/DMRPanelFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_expressDMRFragment"
+            app:destination="@id/expressDMRFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_navDatacard"
+            app:destination="@id/navDatacard" />
+        <action
+            android:id="@+id/action_nav_home_to_MMMFragment"
+            app:destination="@id/MMMFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_creditCardFragment"
+            app:destination="@id/creditCardFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_giveTopupFragment"
+            app:destination="@id/giveTopupFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_ICICIAEPSFragment"
+            app:destination="@id/ICICIAEPSFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_loanRepaymentFragment"
+            app:destination="@id/loanRepaymentFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_mutualFundFragment"
+            app:destination="@id/mutualFundFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_postpaidFragment"
+            app:destination="@id/postpaidFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.makemywallet.ui.allfragment.PrepaidRechargeFragment"
+        android:label="@string/menu_main_wallet"
+        tools:layout="@layout/fragment_prepaid_recharge">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navDatacard"
+        android:name="com.makemywallet.ui.allfragment.DataCardFragment"
+        android:label="@string/menu_data_card"
+        tools:layout="@layout/fragment_data_card" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/DTHRechargeFragment"
+        android:name="com.makemywallet.ui.allfragment.DTHRechargeFragment"
+        android:label="fragment_d_t_h_recharge"
+        tools:layout="@layout/fragment_d_t_h_recharge" />
+
+    <fragment
+        android:id="@+id/gasFragment"
+        android:name="com.makemywallet.ui.allfragment.GasFragment"
+        android:label="@string/gas_recharge"
+        tools:layout="@layout/fragment_gas"/>
+
+    <fragment
+        android:id="@+id/landlineFragment"
+        android:name="com.makemywallet.ui.allfragment.LandlineFragment"
+        android:label="@string/landline_recharge"
+        tools:layout="@layout/fragment_landline"/>
+
+    <fragment
+        android:id="@+id/BBPSFragment"
+        android:name="com.makemywallet.ui.allfragment.BBPSFragment"
+        android:label="@string/bbps_pay"
+        tools:layout="@layout/fragment_b_b_p_s" >
+        <action
+            android:id="@+id/action_BBPSFragment_to_electricityFragment"
+            app:destination="@id/electricityFragment" />
+        <action
+            android:id="@+id/action_BBPSFragment_to_waterFragment"
+            app:destination="@id/waterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/electricityFragment"
+        android:name="com.makemywallet.ui.allfragment.ElectricityFragment"
+        android:label="@string/electricity"
+        tools:layout="@layout/fragment_electricity" />
+
+    <fragment
+        android:id="@+id/waterFragment"
+        android:name="com.makemywallet.ui.allfragment.WaterFragment"
+        android:label="@string/water"
+        tools:layout="@layout/fragment_water"/>
+
+    <fragment
+        android:id="@+id/DMRPanelFragment"
+        android:name="com.makemywallet.ui.allfragment.DMRPanelFragment"
+        android:label="@string/dmr_panel"
+        tools:layout="@layout/fragment_d_m_r_panel" >
+        <action
+            android:id="@+id/action_DMRPanelFragment_to_DMRPanelRegisterFragment"
+            app:destination="@id/DMRPanelRegisterFragment" />
+        <action
+            android:id="@+id/action_DMRPanelFragment_to_addBenifisryFragment"
+            app:destination="@id/addBenifisryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DMRPanelRegisterFragment"
+        android:name="com.makemywallet.ui.allfragment.DMRPanelRegisterFragment"
+        android:label="@string/dmr_panel"
+        tools:layout="@layout/fragment_d_m_r_panel_register" />
+
+    <fragment
+        android:id="@+id/addBenifisryFragment"
+        android:name="com.makemywallet.ui.allfragment.AddBenifisryFragment"
+        android:label="@string/add_baneficiary"
+        tools:layout="@layout/fragment_add_benifisry" />
+
+    <fragment
+        android:id="@+id/expressDMRFragment"
+        android:name="com.makemywallet.ui.allfragment.ExpressDMRFragment"
+        android:label="@string/express_dmr"
+        tools:layout="@layout/fragment_express_d_m_r" />
+
+    <fragment
+        android:id="@+id/MMMFragment"
+        android:name="com.makemywallet.ui.allfragment.MMMFragment"
+        android:label="@string/make_my_wallet"
+        tools:layout="@layout/fragment_m_m_m" />
+
+    <fragment
+        android:id="@+id/giveTopupFragment"
+        android:name="com.makemywallet.ui.allfragment.GiveTopupFragment"
+        android:label="@string/give_top_up"
+        tools:layout="@layout/fragment_give_topup" >
+        <action
+            android:id="@+id/action_giveTopupFragment_to_memberDetailsFragment"
+            app:destination="@id/memberDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/creditCardFragment"
+        android:name="com.makemywallet.ui.allfragment.CreditCardFragment"
+        android:label="@string/credit_card"
+        tools:layout="@layout/fragment_credit_card" />
+    <fragment
+        android:id="@+id/ICICIAEPSFragment"
+        android:name="com.makemywallet.ui.allfragment.ICICIAEPSFragment"
+        android:label="@string/icici_aeps"
+        tools:layout="@layout/fragment_i_c_i_c_i_a_e_p_s" />
+    <fragment
+        android:id="@+id/loanRepaymentFragment"
+        android:name="com.makemywallet.ui.allfragment.LoanRepaymentFragment"
+        android:label="@string/loan_repayment"
+        tools:layout="@layout/fragment_loan_repayment" />
+    <fragment
+        android:id="@+id/mutualFundFragment"
+        android:name="com.makemywallet.ui.allfragment.MutualFundFragment"
+        android:label="@string/mutual_fund"
+        tools:layout="@layout/fragment_mutual_fund" />
+    <fragment
+        android:id="@+id/nav_change_password"
+        android:name="com.makemywallet.ui.allfragment.ChangePasswordFragment"
+        android:label="@string/menu_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/nav_account_statement"
+        android:name="com.makemywallet.ui.allfragment.AccountStatementFragment"
+        android:label="@string/menu_account_statement"
+        tools:layout="@layout/fragment_account_statiment" />
+    <fragment
+        android:id="@+id/nav_change_mpin"
+        android:name="com.makemywallet.ui.allfragment.ChangeMpinFragment"
+        android:label="@string/menu_change_mpin"
+        tools:layout="@layout/fragment_change_mpin" />
+
+    <fragment
+        android:id="@+id/nav_recharge_history"
+        android:name="com.makemywallet.ui.allfragment.RechargeHistoryFragment"
+        android:label="@string/menu_recharge_history"
+        tools:layout="@layout/fragment_recharge_history" />
+
+    <fragment
+        android:id="@+id/nav_express_dmr_payout"
+        android:name="com.makemywallet.ui.allfragment.PayoutReportFragment"
+        android:label="@string/menu_express_dmr_payout"
+        tools:layout="@layout/fragment_payout_report" />
+
+    <fragment
+        android:id="@+id/nav_dmr_report"
+        android:name="com.makemywallet.ui.allfragment.DMTHistoryFragment"
+        android:label="@string/menu_dmr_report"
+        tools:layout="@layout/fragment_d_m_t_history" />
+
+    <fragment
+        android:id="@+id/memberDetailsFragment"
+        android:name="com.makemywallet.ui.allfragment.MemberDetailsFragment"
+        android:label="@string/member_details"
+        tools:layout="@layout/fragment_member_details" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.makemywallet.ui.allfragment.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/postpaidFragment"
+        android:name="com.makemywallet.ui.allfragment.PostpaidFragment"
+        android:label="@string/postpaid_recharge"
+        tools:layout="@layout/fragment_postpaid" />
+
+</navigation>

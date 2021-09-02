@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_order_history"
+            android:icon="@drawable/ic_baseline_dinner_"
+            android:title="@string/order_history" />
+
+        <item
+            android:id="@+id/nav_customer_complaints"
+            android:icon="@drawable/ic_baseline_mark_chat"
+            android:title="@string/customer_complaints" />
+
+        <item
+            android:id="@+id/nav_help_centre"
+            android:icon="@drawable/ic_baseline_live_help_24"
+            android:title="@string/help_centre" />
+
+        <item
+            android:id="@+id/nav_share_your_feedback"
+            android:icon="@drawable/ic_baseline_edit_note_24"
+            android:title="@string/share_feedback" />
+    </group>
+</menu>

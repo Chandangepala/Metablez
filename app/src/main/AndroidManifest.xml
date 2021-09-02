@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.basic.metablez">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity android:name=".activities.OrderListActivity"></activity>
+        <activity android:name=".utility.GasRefillActivity" />
+        <activity android:name=".activities.CouponActivity" />
+        <activity android:name=".activities.EditAddressActivity" />
+        <activity android:name=".utility.ChooseNetworkActivity" />
+        <activity android:name=".utility.RechargeActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".map.MapsTrackingActivity"
+            android:label="@string/title_activity_maps_tracking" />
+        <activity android:name=".activities.AddAddressActivity" />
+        <activity android:name=".activities.ContactUsActivity" />
+        <activity android:name=".activities.ChooseAdressActivity" />
+        <activity android:name=".activities.ReferEarnActivity" />
+        <activity android:name=".activities.MyProfileActivity" />
+        <activity android:name=".activities.PaymentMehodActivity" />
+        <activity android:name=".activities.DeliveryOptionsActivity" />
+        <activity android:name=".activities.ShopsActivity" />
+        <activity android:name=".activities.ProductDetailsActivity" />
+        <activity android:name=".activities.ProductActivity" />
+        <activity android:name=".activities.UtilityServicesActivity" />
+        <activity android:name=".activities.WalletActivity" />
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.ResetPasswordActivity" />
+        <activity android:name=".activities.ForgotPassActivity" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+</manifest>

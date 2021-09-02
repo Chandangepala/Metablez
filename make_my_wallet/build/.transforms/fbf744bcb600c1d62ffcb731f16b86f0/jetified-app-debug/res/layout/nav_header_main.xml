@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_15sdp"
+    android:paddingTop="@dimen/_8sdp"
+    android:paddingRight="@dimen/_15sdp"
+    android:paddingBottom="@dimen/_8sdp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icUser"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="1dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cirIvChooseImg"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/ic_photo_camera">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingTop="@dimen/_3sdp"
+        android:text=""
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:paddingTop="@dimen/_2sdp"
+        android:text="CSP247758"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:paddingTop="@dimen/_2sdp"
+        android:text="8171626532"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:paddingTop="@dimen/_2sdp"
+        android:text=""
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:paddingTop="@dimen/_2sdp"
+        android:text="makemywallet.in 2020"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone" />
+
+</LinearLayout>

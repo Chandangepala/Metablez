@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name" translatable="false">Meatablez Retailer</string>
+    <string name="register_phone_txt">Just register your phone no. to begin.</string>
+    <string name="phone_no">Mobile No.</string>
+    <string name="register">Register</string>
+    <string name="verify">Verify</string>
+    <string name="setup_shop">Set up your shop</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="shop_address">Shop Address</string>
+    <string name="shop_category">Shop Category</string>
+    <string name="set_up">Start Shop</string>
+    <string name="orders">Orders</string>
+    <string name="insights">Insights</string>
+    <string name="menu">Menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_close" translatable="false">Drawer Closed</string>
+    <string name="navigation_drawer_open" translatable="false">Drawer Open</string>
+    <string name="order_history">Order history</string>
+    <string name="customer_complaints">Customer complaints</string>
+    <string name="help_centre">Help centre</string>
+    <string name="share_feedback">Share feedback</string>
+
+</resources>
