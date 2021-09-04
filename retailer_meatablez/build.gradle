@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.basic.retailer_meatablez"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -18,8 +18,17 @@ android {
 
     buildTypes {
         release {
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        buildFeatures {
+
+            dataBinding true
+
+            // for view binding:
+            // viewBinding true
         }
     }
     compileOptions {
@@ -43,7 +52,7 @@ dependencies {
     implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
     //lib for auto scroll viewpager...
     implementation 'com.github.pzienowicz:androidx-auto-scroll-view-pager:1.2.0'
-    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.core:core-ktx:1.6.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     //For round imageview
     implementation 'com.makeramen:roundedimageview:2.3.0'

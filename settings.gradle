@@ -4,3 +4,4 @@ include ':make_my_wallet'
 include ':retailer_meatablez'
 include ':app'
 rootProject.name = "Metablez"
+include ':delivery_partner'

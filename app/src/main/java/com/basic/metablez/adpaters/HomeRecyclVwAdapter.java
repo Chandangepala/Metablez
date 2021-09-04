@@ -16,7 +16,6 @@ import com.basic.metablez.activities.ProductActivity;
 import com.basic.metablez.activities.ShopsActivity;
 import com.basic.metablez.activities.UtilityServicesActivity;
 import com.basic.metablez.models.HomeModel;
-import com.makemywallet.ui.activity.DashboardActivity;
 
 import java.util.ArrayList;
 

@@ -56,6 +56,7 @@ public class RegisterActivity extends AppCompatActivity  {
                     String password = edtPassword.getText().toString().trim();
                     String phoneNo = edtMobileNo.getText().toString().trim();
                     registerUser(email,phoneNo, password);
+                    startVerifyOTPActivity();
                     //registerUserAndroidNetworking(email, phoneNo, password);
                     //firebaseSignUp(email, password);
                 }catch (Exception e){
@@ -148,7 +149,6 @@ public class RegisterActivity extends AppCompatActivity  {
                 .addBodyParameter("phone_number", mobileNo)
                 .addBodyParameter("password", password)
                 .setPriority(Priority.HIGH)
-                .setPriority(Priority.HIGH)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
@@ -161,6 +161,11 @@ public class RegisterActivity extends AppCompatActivity  {
                         Toast.makeText(RegisterActivity.this, "Error: "+ anError.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
+    }
 
+    //To call VerifyOTP activity intent
+    private void startVerifyOTPActivity() {
+        Intent iVerify = new Intent(RegisterActivity.this, VerifyOTPActivity.class);
+        startActivity(iVerify);
     }
 }

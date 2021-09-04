@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor= "@color/white">
+
+    <item
+        android:id="@+id/feed"
+        android:title="Feed"
+        android:icon="@drawable/ic_baseline_feed_24"
+        app:cnb_iconColor = "@color/white"/>
+
+    <item
+        android:id="@+id/payout"
+        android:title="Payout"
+        android:icon="@drawable/ic_baseline_payout"
+        app:cnb_iconColor = "@color/white"/>
+
+
+    <item
+        android:id="@+id/deposit"
+        android:title="Deposit"
+        android:icon="@drawable/ic_baseline_deposit"
+        app:cnb_iconColor = "@color/white"/>
+
+    <item
+        android:id="@+id/more"
+        android:title="More"
+        android:icon="@drawable/ic_baseline_more"
+        app:cnb_iconColor = "@color/white"/>
+</menu>

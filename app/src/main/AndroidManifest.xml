@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         tools:replace="android:icon">
-        <activity android:name=".activities.OrderListActivity"></activity>
+        <activity android:name=".activities.VerifyOTPActivity"></activity>
+        <activity android:name=".activities.OrderListActivity" />
         <activity android:name=".utility.GasRefillActivity" />
         <activity android:name=".activities.CouponActivity" />
         <activity android:name=".activities.EditAddressActivity" />
@@ -62,10 +63,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
     </application>
-    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>

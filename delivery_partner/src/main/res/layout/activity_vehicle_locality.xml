@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.VehicleLocalityActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_25sdp"
+          android:paddingLeft="@dimen/_10sdp"
+          android:paddingRight="@dimen/_10sdp"
+          android:text="Select vehicle and locality"
+          android:textStyle="bold"
+          android:textSize="@dimen/_15sdp"
+          android:textColor="@color/black" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_2sdp"
+          android:paddingLeft="@dimen/_10sdp"
+          android:paddingRight="@dimen/_10sdp"
+          android:paddingTop="@dimen/_4sdp"
+          android:paddingBottom="@dimen/_4sdp"
+          android:text="The area in which you will get orders"
+          android:textSize="@dimen/_12sdp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_25sdp"
+          android:paddingLeft="@dimen/_10sdp"
+          android:paddingRight="@dimen/_10sdp"
+          android:text="Vehicle"
+          android:textSize="@dimen/_15sdp"
+          android:textStyle="bold"
+          android:textColor="@color/black"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center_horizontal"
+          android:layout_marginTop="@dimen/_20sdp">
+
+         <LinearLayout
+             android:id="@+id/bike_card"
+             android:layout_width="@dimen/_70sdp"
+             android:layout_height="@dimen/_90sdp"
+             android:orientation="vertical"
+             android:layout_marginRight="@dimen/_20sdp"
+             android:gravity="center"
+             android:background="@drawable/veh_backg">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/ic_baseline_two_wheeler_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="Bike"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/bicycle_card"
+             android:layout_width="@dimen/_70sdp"
+             android:layout_height="@dimen/_90sdp"
+             android:layout_marginRight="@dimen/_20sdp"
+             android:orientation="vertical"
+             android:gravity="center"
+             android:background="@drawable/veh_backg">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/ic_baseline_pedal_bike_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="Bicycle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/e_bicycle_card"
+             android:layout_width="@dimen/_70sdp"
+             android:layout_height="@dimen/_90sdp"
+             android:orientation="vertical"
+             android:gravity="center"
+             android:background="@drawable/veh_backg">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/ic_baseline_electric_bike_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="E-Bicycle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                />
+
+         </LinearLayout>
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_25sdp"
+          android:paddingLeft="@dimen/_10sdp"
+          android:paddingRight="@dimen/_10sdp"
+          android:text="City:"
+          android:textSize="@dimen/_15sdp"
+          android:textStyle="bold"
+          android:textColor="@color/black"/>
+
+      <TextView
+          android:id="@+id/txt_select_city"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/_10sdp"
+          android:layout_marginRight="@dimen/_10sdp"
+          android:layout_marginTop="@dimen/_15sdp"
+          android:text="Select City"
+          android:textColor="@color/darkerGray"
+          android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+          android:drawablePadding="@dimen/_5sdp"
+          android:background="@drawable/veh_backg"
+          android:padding="7sp"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_25sdp"
+          android:paddingLeft="@dimen/_10sdp"
+          android:paddingRight="@dimen/_10sdp"
+          android:text="Locality:"
+          android:textSize="@dimen/_15sdp"
+          android:textStyle="bold"
+          android:textColor="@color/black"/>
+
+      <TextView
+          android:id="@+id/txt_select_locality"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/_10sdp"
+          android:layout_marginRight="@dimen/_10sdp"
+          android:layout_marginTop="@dimen/_15sdp"
+          android:text="Select Locality"
+          android:textColor="@color/darkerGray"
+          android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+          android:drawablePadding="@dimen/_5sdp"
+          android:background="@drawable/veh_backg"
+          android:padding="7sp"
+          />
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/_2sdp">
+
+         <Button
+             android:id="@+id/btn_procced"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_marginLeft="@dimen/_10sdp"
+             android:layout_marginTop="@dimen/_20sdp"
+             android:layout_marginRight="@dimen/_10sdp"
+             android:layout_marginBottom="@dimen/_20sdp"
+             android:backgroundTint="@color/red"
+             android:text="Proceed"
+             android:textAllCaps="false"
+             android:textSize="@dimen/_14sdp" />
+      </RelativeLayout>
+   </LinearLayout>
+
+   <include layout="@layout/select_city"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:id="@+id/select_city_layout"
+       android:visibility="gone"/>
+
+   <include layout="@layout/select_locality"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:id="@+id/select_locality_layout"
+       android:visibility="gone" />
+
+</RelativeLayout>

@@ -48,4 +48,5 @@
     <string name="insta_url">https://www.instagram.com/meatablez_/</string>
     <string name="twitter_url">https://twitter.com/_Meatablez</string>
     <string name="youtube_url">https://www.youtube.com/channel/UC_H27IXnRmfRd9wNBkprH9Q</string>
+    <string name="verify_otp">Verify OTP</string>
 </resources>
